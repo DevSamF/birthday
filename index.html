@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Feliz Aniversário, Gaby!</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1>Feliz Aniversário, Gaby!</h1>
+            <h2>Que seu dia seja repleto de alegrias e momentos inesquecíveis!</h2>
+        </header>
+
+        <div class="main-content">
+            <div class="images">
+                <img src="IMG-20240910-WA0064.jpg" alt="Feliz Aniversário, Gaby">
+                <img src="IMG_20240910_224048_432.jpg" alt="Outra Imagem">
+            </div>
+
+            <div id="center">
+                <div class="brick one"></div>
+                <div class="tooltip-mario-container">
+                    <div class="box"></div>
+                    <div class="mush"></div>
+                </div>
+                <div class="brick two"></div>
+            </div>
+
+            <canvas id="confetti"></canvas>
+            <br><br>
+            <button id="btn">&#x1F389;</button> <!-- Mover o botão aqui -->
+
+            <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+            <script>
+                const btn = document.querySelector('#btn');
+                const jsConfetti = new JSConfetti();
+
+                btn.addEventListener('click', () => {
+                    jsConfetti.addConfetti();
+                });
+
+                window.onload = () => {
+                    jsConfetti.addConfetti();
+                };
+            </script>
+
+            <style>
+                #confetti {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 999;
+            pointer-events: none;
+        }
+
+        #btn {
+            width: 200px; /* Ajuste a largura conforme necessário */
+            height: 50px; /* Ajuste a altura conforme necessário */
+            font-size: 20px; /* Ajuste o tamanho da fonte */
+            background-color: #f39c12; /* Cor de fundo do botão */
+            color: white; /* Cor do texto */
+            border: none; /* Remover borda */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+            margin-top: 20px; /* Espaçamento acima do botão */
+        }
+            </style>
+
+            <div class="letter">
+                <p>Querida Gaby,</p>
+                <p>Às vezes, os momentos mais inesperados se tornam os mais significativos. Lembro-me claramente daquele
+                    dia no hotel, onde o acaso nos uniu de uma forma tão surpreendente e maravilhosa. Nunca imaginei que
+                    aquele encontro aleatório se transformaria em uma amizade tão especial e duradoura.</p>
+                <p>Desde então, nossa amizade só cresceu e se fortaleceu, superando a distância e o tempo. Cada
+                    conversa, cada risada e cada momento compartilhado são tesouros que guardo com carinho. Sua presença
+                    na minha vida é um presente que valorizo imensamente, e estou muito feliz por termos encontrado uma
+                    conexão tão genuína e duradoura.</p>
+                <p>Que seu aniversário seja tão incrível quanto você é, e que o próximo ano traga ainda mais momentos
+                    especiais para celebrarmos juntos. Estou ansioso para continuar compartilhando novas memórias e
+                    experiências com você.</p>
+                <p>Com todo o meu carinho,</p>
+                <p>Samuel</p>
+            </div>
+            <br>
+
+            <div class="letter">
+                <p>Querida Gaby,</p>
+                <p>Às vezes, os momentos mais inesperados se tornam os mais significativos. Lembro-me claramente daquele
+                    dia no hotel, onde o acaso nos uniu de uma forma tão surpreendente e maravilhosa. Nunca imaginei que
+                    aquele encontro aleatório se transformaria em uma amizade tão especial e duradoura.</p>
+                <p>Desde então, nossa amizade só cresceu e se fortaleceu, superando a distância e o tempo. Cada
+                    conversa, cada risada e cada momento compartilhado são tesouros que guardo com carinho. Sua presença
+                    na minha vida é um presente que valorizo imensamente, e estou muito feliz por termos encontrado uma
+                    conexão tão genuína e duradoura.</p>
+                <p>Que seu aniversário seja tão incrível quanto você é, e que o próximo ano traga ainda mais momentos
+                    especiais para celebrarmos juntos. Estou ansioso para continuar compartilhando novas memórias e
+                    experiências com você.</p>
+                <p>Com todo o meu carinho,</p>
+                <p>Samuel</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>Pague nossa passagem pra Recife &#128591;</p>
+    </footer>
+</body>
+
+</html>
